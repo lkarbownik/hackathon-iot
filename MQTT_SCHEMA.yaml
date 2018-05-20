@@ -1,0 +1,61 @@
+#!RAML-ish
+
+AirQualityEvent:
+  description: |
+    Object published to an MQTT topic.
+  type: object
+  properties:
+    message_uuid:
+      type: uuid4
+      description: |
+        Unique identifier of an message (for future).
+    format:
+      type: string
+      description: |
+        Format of the message (for future versioning purpose).
+    payload:
+      description: |
+        Actual data about air quality.
+      type: object
+      properties:
+        particulate_matter:
+          description: |
+            Data gathered by the PMS7003 air quality sensor.
+          type: object
+          properties:
+            pm10:
+              description: "PM1"
+              type: number
+              format: double
+            pm25:
+              description: "PM2.5"
+              type: number
+              format: double
+            pm100:
+              description: "PM10"
+              type: number
+              format: double
+        temperature:
+          description: |
+            Data gathered by the DHT11 sensor.
+          type: number
+          format: double
+        humidity:
+          description: |
+            Data gathered by the DHT11 sensor.
+          type: number
+          format: double
+  example: |
+    {
+        "message_uuid": "0d62604d-a6db-40a8-8498-8568332db41d",
+        "format": "",
+        "payload": {
+            "air": {
+                "pm10": "12.40",
+                "pm25": "5.60",
+                "pm100": "34.00"
+            },
+            "temparature": "24.5",
+            "humidity": "75"
+        }
+    }
