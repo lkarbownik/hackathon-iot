@@ -2,8 +2,6 @@
 
 AirQualityEvent:
   description: |
-    Object published to an MQTT topic.
-  type: object
   properties:
     message_uuid:
       type: uuid4
@@ -50,12 +48,12 @@ AirQualityEvent:
         "message_uuid": "0d62604d-a6db-40a8-8498-8568332db41d",
         "format": "",
         "payload": {
-            "air": {
-                "pm10": "12.40",
-                "pm25": "5.60",
-                "pm100": "34.00"
+            "particulate_matter": {
+                "pm10": 12.4,
+                "pm25": 5.6,
+                "pm100": 34
             },
-            "temparature": "24.5",
-            "humidity": "75"
+            "temparature": 24.5,
+            "humidity": 75
         }
     }
