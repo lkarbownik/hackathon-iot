@@ -211,6 +211,10 @@ pms = PMS7003()
 pms_data = pms.read()
 ```
 
+**Connection:**
+![Connection](assets/PMS7003_module_bb.png)
+![Connection](assets/PMS7003_picture.jpg)
+
 **Reference:**
 - [specification](https://botland.com.pl/index.php?controller=attachment&id_attachment=2182) (Appendix 1)
 
@@ -236,6 +240,10 @@ np = neopixel.NeoPixel(machine.Pin(4), 8)
 np[0] = (255, 0, 0)
 np.write()
 ```
+
+**Connection:**
+![Connection](assets/ws2812b_module_bb.png)
+![Connection](assets/WS2812b_picture.jpg)
 
 **Reference:**
 - [neopixel](https://docs.micropython.org/en/v1.8/esp8266/esp8266/tutorial/neopixel.html)
@@ -265,6 +273,10 @@ display.fill(0)
 display.show()
 ```
 
+**Connection:**
+![Connection](assets/OLED_module_bb.png)
+![Connection](assets/OLED_picture.jpg)
+
 **Reference:**
 - [driver](https://github.com/robert-hh/SH1106/blob/master/sh1106.py)
 
@@ -289,6 +301,10 @@ d.measure()
 d.temperature()
 d.humidity()
 ```
+
+**Connection:**
+![Connection](assets/DHT11_module_bb.png)
+![Connection](assets/DHT11_picture.jpg)
 
 **Reference:**
 - https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/dht.html
