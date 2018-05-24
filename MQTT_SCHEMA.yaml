@@ -3,10 +3,6 @@
 AirQualityEvent:
   description: |
   properties:
-    message_uuid:
-      type: uuid4
-      description: |
-        Unique identifier of an message (for future).
     format:
       type: string
       description: |
@@ -45,7 +41,6 @@ AirQualityEvent:
           format: double
   example: |
     {
-        "message_uuid": "0d62604d-a6db-40a8-8498-8568332db41d",
         "format": "",
         "payload": {
             "particulate_matter": {

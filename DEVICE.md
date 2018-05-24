@@ -379,3 +379,7 @@ mosquitto_pub -h 10.93.1.22 -t topic -m message # publish a new message on speci
 mosquitto_sub -h 10.93.1.22 -t topic # subscribe to messages published on specified topic
 ```
 
+- I don't know what I'm doing, tell me how to wire my end device.
+
+![Connection](assets/full_module_bb.png)
+![Connection](assets/full_module_picture.jpg)
