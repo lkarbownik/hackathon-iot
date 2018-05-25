@@ -48,7 +48,7 @@ AirQualityEvent:
                 "pm25": 5.6,
                 "pm100": 34
             },
-            "temparature": 24.5,
+            "temperature": 24.5,
             "humidity": 75
         }
     }
